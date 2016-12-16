@@ -10,7 +10,7 @@ import random
 import traceback
 import MySQLdb
 import time
-
+import math
 
 # 打开数据库连接
 db = MySQLdb.connect("127.0.0.1","root","root","testpython",charset='utf8')
@@ -141,8 +141,13 @@ for p in range(count):
             insertid=db.insert_id()
             print insertid
             # SQL 插入文章内容
-            sql = """INSERT INTO sys_cms_content_data_01(id,cid, content)
-                     VALUES (%d,%d,'%s')""" %(insertid,1,str_content)
+            tableindex = '01'
+            tableindex = math.ceil(float(insertid)/100000)
+            tableindex = int(tableindex)
+            if tableindex<10:
+                tableindex = '0'+str(tableindex)
+            sql = """INSERT INTO sys_cms_content_data_%s(id,cid, content)
+                     VALUES (%d,%d,'%s')""" %(tableindex,insertid,1,str_content)
 
             # 执行sql语句
             cursor.execute(sql)
