@@ -1,0 +1,7 @@
+1. 运行本脚本需要有Python一定的基础，至少知道怎么运行Python文件；
+2. 本脚本只在Macos下运行测试过，由于是utf-8编码开发的，所以在Windows的cmd下运行会有乱码问题，所以建议在Linux下运行，当然也可以直接在Python的IDLE下运行；
+3. 本脚本依赖两个第三方库(requests，pyquery) 使用pip install 库名 即可安装，详见main.py头部注释部分；
+4. 请只运行main.py 文件，运行方法: Python main.py
+5. 所有的采集配置均在main.py 文件下修改，请谨慎修改，特别是在windows下,不要乱用tab键，请在支持utf-8编码的编辑器下修改；
+6. 由于自己胡乱修改出现的问题请自行解决；对于刚开始不懂配置的，可参考默认配置，并尝试运行默认配置的看下结果；
+7. 欢迎加入itseo大家庭，学习牛逼的SEO技术（www.itseo.net）
