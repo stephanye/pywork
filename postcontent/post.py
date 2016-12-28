@@ -164,6 +164,7 @@ for p in range(count):
             cursor.execute(sql)
             insertid=db.insert_id()
             print insertid
+            print title
             print '\r'
             # SQL 插入文章内容
             tableindex = '01'
