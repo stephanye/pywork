@@ -24,7 +24,7 @@ if __name__ == '__main__':
     writer = open("shehuinews.txt", 'a')
     # 要抓取的url列表页配置
     start = 2  # 起始页
-    end = 5  # 结束页
+    end = 2  # 结束页
     step = 1  # 公差
     chapter_indexurl = 'http://www.mnw.cn/news/shehui/'  # 列表页首页，对于不符合分页规则的列表页首页可在此添加，符合的则留空
     chapter_url = "http://www.mnw.cn/news/shehui/index-{0}.html"  # 列表页规则配置 {0}为分页页码位置
